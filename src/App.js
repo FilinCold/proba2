@@ -7,11 +7,15 @@ import {
     Redirect,
     withRouter
 } from "react-router-dom"
+import PostsContainer from "./components/PostsContainer/PostsContainer";
+import Posts from "./components/PostsContainer/Posts";
+
 
 function App() {
+
     return (
         <div className="wrapper">
-            <Switch>
+
                 <div className="container__user-posts">
                     <div className="container__user">
                         <Button variant="contained" color="primary">Sign In</Button>
@@ -20,12 +24,12 @@ function App() {
 
                     </div>
                     <div className="container__posts">
-                        {/*<Route render={() => {<PostsContainer />}}/>*/}
+                        <Route render={() => <PostsContainer  />}/>
                     </div>
                 </div>
 
 
-            </Switch>
+
         </div>
     );
 }

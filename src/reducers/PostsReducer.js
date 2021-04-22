@@ -12,7 +12,7 @@ let initialState = {
                 'The machines of the industrial world finally took over the handicrafts',
             bigText: '.....',
 
-        }
+        },
     ]
 }
 
