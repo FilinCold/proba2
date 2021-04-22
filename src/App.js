@@ -9,6 +9,7 @@ import {
 } from "react-router-dom"
 import PostsContainer from "./components/PostsContainer/PostsContainer";
 import Posts from "./components/PostsContainer/Posts";
+import UsersContainer from "./components/UserContainer/UsersContainer";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
                 <div className="container__user-posts">
                     <div className="container__user">
-                        <Button variant="contained" color="primary">Sign In</Button>
+                        <Route render={() => <UsersContainer  />}/>
                     </div>
                     <div className="vertical__line">
 

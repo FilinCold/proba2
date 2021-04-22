@@ -1,3 +1,6 @@
+const LOGIN = 'LOGIN';
+const LOGOUT = 'LOGOUT';
+
 let initialState = {
     user: [
         {
@@ -8,15 +11,42 @@ let initialState = {
             aboutMe: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, earum libero mollitia officia pariatur quas.',
         }
     ],
-    buttonAuthorization: false,
+    checkAuthorization: false,
 }
 
 
-const UserReducer = (state=initialState, action) => {
-    return state;
+const UserReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case LOGIN: {
+
+            return {
+                ...state,
+                checkAuthorization: true
+            }
+        }
+
+        case LOGOUT: {
+            return {
+                ...state,
+                checkAuthorization: false
+            }
+        }
+        default: {
+            return state;
+        }
+    }
+
 }
 
-
-
+export let loginAC = () => {
+    return {
+        type: LOGIN,
+    }
+}
+export let unLoginAC = () => {
+    return {
+        type: LOGOUT,
+    }
+}
 
 export default UserReducer;
