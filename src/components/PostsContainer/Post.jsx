@@ -30,7 +30,7 @@ const useStyles = makeStyles({
     }
 });
 
-let Post = (props) => {
+const Post = (props) => {
     const classes = useStyles();
     return (
         <Card className={classes.root}>

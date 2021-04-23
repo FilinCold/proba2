@@ -2,18 +2,17 @@ import React from "react";
 import Post from "./Post";
 
 
-let Posts = (props) => {
+const Posts = (props) => {
 
-    let posts = props.posts.map(p => {
-        return (
-            <div key={p.id}>
-                <Post data={p}/>
-            </div>
-        )
-    })
     return (
         <div>
-            {posts}
+            {props.posts.map(p => {
+                return (
+                  <div key={p.id}>
+                      <Post data={p}/>
+                  </div>
+                )
+            })}
         </div>
     )
 }

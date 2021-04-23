@@ -4,7 +4,7 @@ import Posts from "./Posts";
 const {connect} = require("react-redux");
 
 
-class PostsContainerAPI extends React.Component {
+const PostsContainer extends React.Component {
 
     render() {
 
