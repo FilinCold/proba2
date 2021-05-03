@@ -270,3 +270,102 @@ p {
 .selection {
   text-decoration: underline;
 }
+
+.wrapper__login-register {
+  max-width: 250px;
+  margin: 100px auto 0;
+  /*border: 1px solid black;*/
+
+
+  /*text-align: center;*/
+}
+
+.container__h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  color: #4B4B4B;
+}
+
+.style-label {
+  color: #4B4B4B;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+.box-label {
+  margin-bottom: 10px;
+}
+
+.box-input input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  min-width: 220px;
+  /*border: none;*/
+  border: 1px solid gray;
+}
+.box-input input:focus {
+  border: 1px solid black;
+}
+.form__box {
+  margin-bottom: 10px;
+
+}
+.box-input {
+  /*border: 1px solid black;*/
+}
+#style-submit {
+  min-width: 242px;
+  font-weight: bold;
+  background: #2D2D2D;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.block-text {
+  color: #BABABA;
+  /*font-weight: bold;*/
+  font-size: 13px;
+  margin-top: 30px;
+  /*border: 1px solid black;*/
+  text-align: center;
+}
+.block-text a {
+  color: #BABABA;
+  /*text-decoration: underline;*/
+  position: relative;
+  /*font-weight: bold;*/
+}
+
+/*.block-text a:after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  top: 16px;*/
+/*  width: 40px;*/
+/*  height: 1px;*/
+/*  background: #BABABA;*/
+/*  left: 0;*/
+/*}*/
+
+.register-link:after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  width: 70px;
+  height: 1px;
+  background: #BABABA;
+  left: 0;
+}
+
+.login__link:after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  width: 40px;
+  height: 1px;
+  background: #BABABA;
+  left: 0;
+}

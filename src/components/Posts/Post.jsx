@@ -6,7 +6,7 @@ const Post = (props) => {
   return (
     <div>
       <div className='buttton__main'>
-        <NavLink to='/'>Main</NavLink>
+        <NavLink to='/' onClick={() => props.showMainBlocks()}>Main</NavLink>
       </div>
       {
         props.arr.map(({

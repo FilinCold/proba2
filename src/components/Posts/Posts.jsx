@@ -34,7 +34,7 @@ const Posts = (props) => {
                             {p.text}
                         </div>
                         <div className="show-post">
-                            <NavLink  to={`/posts/:${p.id}`}>Read</NavLink>
+                            <NavLink onClick={() => props.hiddenMainBlocks()} to={`/posts/:${p.id}`}>Read</NavLink>
                         </div>
 
                     </div>
