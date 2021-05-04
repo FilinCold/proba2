@@ -4,7 +4,10 @@ import React from "react";
 
 const MyArticles = () => {
   return (
-    <h2>MyArticles</h2>
+    <div className='wrapper__post'>
+      <h2>MyArticles</h2>
+    </div>
+
   )
 }
 

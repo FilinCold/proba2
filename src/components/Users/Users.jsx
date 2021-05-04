@@ -1,8 +1,18 @@
 import React, {useState} from "react";
+import { useHistory } from "react-router-dom";
+
 import User from "./User";
 
+// const Users = ({route}) => {
+//
+//   return (
+//     <div></div>
+//   )
+// }
+const Users = (props) => {
+  const history = useHistory();
 
-const Users = () => {
+
   const [check, setCheck] = useState(false)
   const [user, setUser] = useState({
     id: 0,
@@ -12,7 +22,9 @@ const Users = () => {
     aboutMe: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, earum libero mollitia officia pariatur quas.',
   })
   const logIn = () => {
-    setCheck(true)
+    history.push('/login');
+    props.setCheckSignIn(true)
+    // setCheck(true)
   }
   const logOut = () => {
     setCheck(false)
@@ -24,7 +36,18 @@ const Users = () => {
         {check ? <User user={user}/> : null}
       </div>
       <div className="container__button">
-        {check ? <button onClick={logOut}>Logout</button> : <button onClick={logIn}>LogIn</button>}
+        {check
+          ? <button
+            onClick={logOut}
+          >
+            Logout
+        </button>
+          : <button
+            onClick={logIn}
+          >
+            LogIn
+          </button>
+        }
       </div>
     </div>
   )

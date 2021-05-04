@@ -23,6 +23,18 @@ body {
   border: none;
   margin: 0;
 }
+.wrapper__user {
+  position: relative;
+}
+.wrapper__user:after {
+  content: '';
+  position: absolute;
+    top: 1%;
+    left: 105%;
+    width: 1px;
+    height: 500px;
+    background: gray;
+}
 .vertical__line {
   width: 1px;
   height: 500px;
@@ -33,6 +45,7 @@ body {
 .wrapper__post {
   max-width: 800px;
   padding: 10px;
+  margin-left: 100px;
   margin-bottom: 20px;
 }
 
@@ -90,7 +103,9 @@ a {
 
 .profile__user {
   display: flex;
-
+  position: relative;
+  /*border-right: 1px solid gray;*/
+  padding: 10px;
 }
 .container__user {
   text-align: center;
@@ -187,10 +202,19 @@ button {
 .post {
   /*margin: 0 auto;*/
   /*border: 1px solid black;*/
+  display: flex;
+  justify-content: space-around;
+
+  /*max-width: 450px;*/
+  /*margin: 0 auto;*/
+
+  /*justify-content: space-between;*/
 }
-
+.post .container__posts{
+  margin-right: 100px;
+  max-width: 450px;
+}
 .post h1 {
-
   text-align: center;
 }
 .list {
@@ -369,3 +393,22 @@ p {
   background: #BABABA;
   left: 0;
 }
+
+.s {
+  color: red;
+}
+
+.list__links a.active {
+  text-decoration: underline;
+}
+
+/*.profile__user:after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 200px;*/
+/*  width: 1px;*/
+/*  height: 500px;*/
+/*  background: gray;*/
+
+/*}*/

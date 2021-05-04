@@ -6,17 +6,7 @@ import {NavLink} from "react-router-dom";
 
 const User = (props) => {
 
-  const [check, setCheck] = useState(false);
-  const changeCheck = (e) => {
-    // console.log(e.target.id)
-    if (e.target.id && check === false) {
 
-      e.target.className = 'selection'
-     return setCheck(true)
-    }
-    console.log(check)
-    return setCheck(false)
-  }
 
   return (
     <div className='container__user'>
@@ -31,23 +21,24 @@ const User = (props) => {
       <div className="user__links">
         <ul className='list__links'>
           <li>
-            <NavLink id='allarticles' onClick={changeCheck} to='/allarticles'>All
+            <NavLink id='allarticles'  to='/allarticles'>All
               articles</NavLink>
           </li>
 
           <li>
-            <NavLink id='myarticles' onClick={changeCheck} to='/myarticles'>My
+            <NavLink id='myarticles'  to='/myarticles'>My
               articles</NavLink>
           </li>
 
           <li>
-            <NavLink id='addarticles' onClick={changeCheck} to='/addarticles'>Add
+            <NavLink id='addarticles'  to='/addarticles'>Add
               article</NavLink>
           </li>
 
           <li>
-            <NavLink id='profile' onClick={changeCheck}
-                     to='/profile'>Profile</NavLink>
+            <NavLink id='profile' to='/profile'>
+              Profile
+            </NavLink>
           </li>
         </ul>
       </div>
